@@ -1,2 +1,206 @@
-HI
-MY NAME IS GOKU
+
+MCA@DESKTOP-878SE9R MINGW64 ~
+$ git version
+git version 2.47.0.windows.1
+
+MCA@DESKTOP-878SE9R MINGW64 ~
+$ cd amal
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ cat newfile1
+i am creating a new file
+we are learning giti am updating 3rd line
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/MCA/amal/.git/
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ pwd
+/c/Users/MCA/amal
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ ls
+newfile1
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ cat >> newfile2
+GREEK GOD
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ cat newfile1
+i am creating a new file
+we are learning giti am updating 3rd line
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ cat newfile2
+GREEK GOD
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ touch f1 f2 f3 f4
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ ls
+f1  f2  f3  f4  newfile1  newfile2
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ echo CR7
+CR7
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ echo "HRX wants to collaborate with my brand" >f1
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ cat f1
+HRX wants to collaborate with my brand
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ git statuse
+git: 'statuse' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f1
+        f2
+        f3
+        f4
+        newfile1
+        newfile2
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ git add f1
+warning: in the working copy of 'f1', LF will be replaced by CRLF the next time Git touches it
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   f1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f2
+        f3
+        f4
+        newfile1
+        newfile2
+
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ git add .
+warning: in the working copy of 'newfile1', LF will be replaced by CRLF the next time Git touches it
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   f1
+        new file:   f2
+        new file:   f3
+        new file:   f4
+        new file:   newfile1
+        new file:   newfile2
+
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ git commit -m"GOKU are you ready"
+[master (root-commit) 749490e] GOKU are you ready
+ 6 files changed, 4 insertions(+)
+ create mode 100644 f1
+ create mode 100644 f2
+ create mode 100644 f3
+ create mode 100644 f4
+ create mode 100644 newfile1
+ create mode 100644 newfile2
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ cd ..
+
+MCA@DESKTOP-878SE9R MINGW64 ~
+$ git config--global user.name"Amal"
+git: 'config--global' is not a git command. See 'git --help'.
+
+MCA@DESKTOP-878SE9R MINGW64 ~
+$ git config --global user.name"Amal"
+
+MCA@DESKTOP-878SE9R MINGW64 ~
+$ git config --global user.email amalaji2292005@gmail.com
+
+MCA@DESKTOP-878SE9R MINGW64 ~
+$ git commit -m"TRESSPASS INTO THE DOMAIN OF GODS"
+fatal: detected dubious ownership in repository at 'C:/'
+'C:/' is owned by:
+        NT SERVICE/TrustedInstaller (S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)
+but the current user is:
+        DESKTOP-878SE9R/MCA (S-1-5-21-1829543155-3654593292-893867696-1001)
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory C:/
+
+MCA@DESKTOP-878SE9R MINGW64 ~
+$ cd amal
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ ls
+f1  f2  f3  f4  newfile1  newfile2
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$ git switch -c branch1
+Switched to a new branch 'branch1'
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (branch1)
+$ ls
+f1  f2  f3  f4  newfile1  newfile2
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (branch1)
+$ topuch b1 b2 b3
+bash: topuch: command not found
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (branch1)
+$ touch b1 b2 b3
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (branch1)
+$ git add .
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (branch1)
+$ git switch master
+Switched to branch 'master'
+A       b1
+A       b2
+A       b3
+
+MCA@DESKTOP-878SE9R MINGW64 ~/amal (master)
+$
+
